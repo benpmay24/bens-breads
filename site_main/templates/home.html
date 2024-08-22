@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+   <!-- Main Content -->
+   <div class="d-flex justify-content-center">
+   <div class="text-center mt-5 welcome-message">
+    <h1>Welcome to Ben's Breads!</h1>
+    <p>Your ultimate source for delicious bread recipes and baking tips.</p>
+   </div>
+    </div>
+
+    <!-- Main Image -->
+    <div class="main-image-home">
+        <img src="{% static 'images/main.jpeg' %}" class="img-fluid mb-4" alt="Main Image">
+    </div>
+
+    <div class="row mt-4">
+        <!-- Recipe Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'images/recipe1.jpg' %}" class="card-img-top" alt="Recipe 1">
+                <div class="card-body">
+                    <h5 class="card-title">Delicious Chocolate Cake</h5>
+                    <p class="card-text">A rich and moist chocolate cake that's perfect for any occasion.</p>
+                    <a href="#" class="btn btn-primary">Read Recipe</a>
+                </div>
+            </div>
+        </div>
+        <!-- Recipe Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'images/recipe2.jpg' %}" class="card-img-top" alt="Recipe 2">
+                <div class="card-body">
+                    <h5 class="card-title">Classic Vanilla Cupcakes</h5>
+                    <p class="card-text">Fluffy vanilla cupcakes topped with creamy buttercream frosting.</p>
+                    <a href="#" class="btn btn-primary">Read Recipe</a>
+                </div>
+            </div>
+        </div>
+        <!-- Recipe Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'images/recipe3.jpg' %}" class="card-img-top" alt="Recipe 3">
+                <div class="card-body">
+                    <h5 class="card-title">Lemon Drizzle Cake</h5>
+                    <p class="card-text">A zesty lemon cake with a sweet and tangy drizzle topping.</p>
+                    <a href="#" class="btn btn-primary">Read Recipe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- New Section Below Recipe Cards -->
+<div class="mt-5">
+    <hr class="my-5"> <!-- Divider -->
+    
+    <!-- Featured Item 1 -->
+    <div class="row mb-5 featured-item">
+        <div class="col-md-4">
+            <img src="{% static 'images/featured-image.jpg' %}" class="img-fluid" alt="Featured Image">
+        </div>
+        <div class="col-md-8">
+            <h2>Our Featured Recipe</h2>
+            <p>Discover our top-rated recipe of the month. Perfectly balanced in flavor and texture, it's a must-try for any bread lover.</p>
+        </div>
+    </div>
+
+    <!-- Featured Item 2 -->
+    <div class="row mb-5 featured-item">
+        <div class="col-md-4">
+            <img src="{% static 'images/featured-image2.jpg' %}" class="img-fluid" alt="Featured Image 2">
+        </div>
+        <div class="col-md-8">
+            <h2>Seasonal Special</h2>
+            <p>A seasonal bread recipe that brings out the best of this time of year. Warm and comforting, it's sure to become a family favorite.</p>
+        </div>
+    </div>
+
+    <!-- Featured Item 3 -->
+    <div class="row featured-item">
+        <div class="col-md-4">
+            <img src="{% static 'images/featured-image3.jpg' %}" class="img-fluid" alt="Featured Image 3">
+        </div>
+        <div class="col-md-8">
+            <h2>Baker's Choice</h2>
+            <p>This week's Baker's Choice is a delectable bread recipe that's as beautiful as it is delicious. Perfect for sharing with loved ones.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

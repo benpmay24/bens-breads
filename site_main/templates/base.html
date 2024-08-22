@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben's Breads</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar (Full Width) -->
+    <nav class="navbar navbar-expand-lg custom-navbar w-100 d-flex justify-content-start">
+        <a class="navbar-brand custom-title" href="#">
+            <img src="{% static 'images/logo.png' %}" alt="Ben's Breads Logo" class="d-inline-block align-top" width="75%">
+            {% comment %} <span class="ml-2">Ben's Breads</span> {% endcomment %}
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-right" id="navbarNav" >
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content (90% Width) -->
+    <div class="container-content">
+        {% block content %} 
+        {% endblock %}
+    </div>
+
+    <!-- Footer (Full Width) -->
+    <footer class="bg-dark text-light text-center py-3 mt-5 w-100">
+        <p>&copy; 2024 Ben's Breads. All rights reserved.</p>
+        <p>
+            <a href="#" class="text-light">Privacy Policy</a> |
+            <a href="#" class="text-light">Terms of Service</a>
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

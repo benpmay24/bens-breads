@@ -1,0 +1,144 @@
+/* Custom styles for Ben's Breads */
+:root {
+    --dark: #222222;
+    --brown: #4b4036;
+    --light: #f8f9fa;
+    --beige: #d2b293;
+  }
+
+body {
+    background-color: var(--light);
+    color: #333;
+    font-family: 'Lora', serif; /* Apply the chosen font */
+    margin: 0; /* Remove global margins */
+}
+
+.container-content {
+    width: 90%; /* Content uses 90% of the page width */
+    margin: 0 auto; /* Center content */
+}
+
+.navbar {
+    background-color: var(--dark); /* Ensure navbar background matches footer */
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: var(--beige); /* Set nav item color to #f8f9fa */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    margin: 0 10px; /* Add spacing between items */
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #adb5bd; /* Light gray color on hover */
+}
+
+/* Custom title styling to match nav items */
+.custom-title {
+    color: #f8f9fa; /* Title color */
+    font-size: 1.5rem;
+}
+
+.custom-title:hover {
+    color: #adb5bd;
+}
+
+/* Navbar toggler styling */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(248,249,250, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+.card-body .btn-primary {
+    background-color: var(--dark);
+    border-color: white;
+}
+
+.card-body .btn-primary:hover {
+    background-color: var(--dark);
+    border-color: white;
+}
+
+/* Center buttons within the card body */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body .btn-primary {
+    margin-top: auto;
+}
+
+/* Featured items layout */
+.featured-item {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.featured-item img {
+    width: 100%;
+    height: auto;
+    max-width: 30%; /* Images take up 30% of the row */
+}
+
+.featured-item .col-md-8 {
+    max-width: 70%; /* Text content takes up 70% of the row */
+    padding-left: 20px; /* Add spacing between image and text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    background-color: var(--dark);
+    color: var(--beige); /* Footer text color */
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: var(--light); /* Footer link color */
+}
+
+footer a:hover {
+    color: var(--light);
+}
+
+/* Welcome message styling */
+.welcome-message {
+    background-color: var(--dark);
+    color: var(--beige);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 40%;
+}
+
+.nav-link { color: var(--beige); } 
+
+.main-image-home {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
